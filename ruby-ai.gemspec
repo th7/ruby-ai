@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'ruby-ai'
-  s.version = '0.0.1'
+  s.version = '0.0.3'
   s.executables << 'ruby-ai'
   s.date = '2013-09-24'
   s.summary = 'ruby-ai'
