@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+if ARGV[0] =='init'
+  bin_path = File.expand_path(File.dirname(__FILE__))
+  `cp #{bin_path}/../lib/ruby-ai/ai.rb .`
+  `cp -r #{bin_path}/../lib/ruby-ai/levels .`
+else
+  require "#{Dir.pwd}/ai"
+  require 'ruby-ai'
+  level = ARGV[0]
+  RubyAI.new(level).show
+end
